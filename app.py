@@ -12,9 +12,9 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 VIDEO_API_KEY = os.getenv("VIDEO_API_KEY")
 
 if not OPENAI_API_KEY:
-    raise ValueError("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")
+    raise ValueError("Fehlender OpenAI API-Schlüssel. Setze die Umgebungsvariable OPENAI_API_KEY.")
 if not VIDEO_API_KEY:
-    raise ValueError("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")
+    raise ValueError("Fehlender Video API-Schlüssel. Setze die Umgebungsvariable VIDEO_API_KEY.")
 
 openai.api_key = OPENAI_API_KEY
 
